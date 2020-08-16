@@ -24,5 +24,6 @@ To get your own coordinates you can take a screenshot and use a program like `Ad
 ### Contact Me!
 - u/Ilan_M on Reddit
 - @_Ilan_M on Twitter
+- @Ilan_M on Discord
 
 Feel free to DM me.
