@@ -1,4 +1,5 @@
-# Made by Ilan_M on 8/15/2020
+# Made by Ilan_M on 8/15/2020.
+# Special thanks to mateushnsoares for the contributions.
 
 import time
 import pyautogui as pa
