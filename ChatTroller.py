@@ -3,15 +3,17 @@
 import time
 import pyautogui as pa
 
+
 def pressKey(key):
     pa.keyDown(key)
     pa.keyUp(key)
 
+
 # the following coordinates were tested fullscreen on a 1920x1080(aka. 'Full HD') display. You may change this if you have other resolution
-ChSearchBar   = [500,   60] # Ch = Chrome
-WAtypeBar     = [1050, 990] # WA = WhatsApp (perhaps I should make a Class)
-WAsearchBar   = [250,  205]
-WAgroupTitle  = [250,  370]
+ChromeSearchBar = [500,   60]
+WhatsAppTypeInput = [1050, 990]
+WhatsAppSearchBar = [250,  205]
+WhatsAppGroupTitle = [250,  370]
 
 # you must change before running the program. Read the README.md for more info.
 chatName = 'somebody once told me'
@@ -27,31 +29,31 @@ pressKey('enter')
 # or put a lower one if you have a fast computer
 time.sleep(7)
 
-pa.click(ChSearchBar)
+pa.click(ChromeSearchBar)
 
 pa.write('https://web.whatsapp.com/')
 
 pressKey('enter')
 
-time.sleep(10) # wait fot WhatsApp web to openx|
+time.sleep(10)  # wait fot WhatsApp web to open|
 
-pa.click(WAsearchBar)
+pa.click(WhatsAppSearchBar)
 pa.write(chatName)
 
 time.sleep(1)
 
-pa.click(WAgroupTitle)
+pa.click(WhatsAppGroupTitle)
 
 time.sleep(0.5)
 
-pa.click(WAtypeBar)
+pa.click(WhatsAppTypeInput)
 
 # change this to the file you want to use, either a custom one or an included on this project is ok
 file1 = open('no.txt')
 
 # reading each line, then send every word separately
 for line in file1:
-    for word in line.split():        
+    for word in line.split():
         pa.typewrite(word)
         pressKey('enter')
         # putting 'time.sleep(0.5)' here is optional
