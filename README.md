@@ -42,6 +42,6 @@ pip install -r .\requirements.txt
 
 - u/Ilan_M on Reddit
 - @\_Ilan_M on Twitter
-- @Ilan_M on Discord
+- @Ilan_M#0541 on Discord
 
 Feel free to DM me.
