@@ -33,6 +33,7 @@ pip install -r .\requirements.txt
 
 ## Credits
 
+- mateushnsoares for the contributions
 - Al Sweigart for the PyAutoGui module
 - r/copypasta for the full Shrek script
 - LyricFind.com for the Never Gonna Give You Up lyrics
